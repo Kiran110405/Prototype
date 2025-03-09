@@ -56,8 +56,8 @@ footer {
     width: 250px;
     font-size: 150%;
     width: 375px;
-    opacity: 50%;
-    background-color: rgba(0, 136, 255, 0.615);
+
+    background-color: rgba(240, 127, 231, 0.615);
 }
 
 .symbols-button {
@@ -65,5 +65,23 @@ footer {
     width: 250px;
     font-size: 150%;
     width: 375px;
-    background-color: purple;
+   
+    background-color: rgba(0, 157, 255, 0.615);
+}
+.basics-button{
+    padding: 30px;
+    width: 250px;
+    font-size: 150%;
+    width: 375px;
+   
+    background-color: rgba(0, 157, 255, 0.615);
+}
+
+.literacy-button{
+    padding: 30px;
+    width: 250px;
+    font-size: 150%;
+    width: 375px;
+    background-color:  rgba(240, 127, 231, 0.615)
+
 }
