@@ -58,3 +58,12 @@ body {
     width: 375px;
     background-color: rgba(240, 127, 231, 0.615)
 }
+
+.Practice-button {
+    padding: 30px;
+    width: 250px;
+    font-size: 150%;
+    width: 375px;
+
+    background-color: rgba(0, 157, 255, 0.615);
+}
