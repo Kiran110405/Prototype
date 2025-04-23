@@ -24,6 +24,8 @@ h2 {
 
 .container {
     margin: 10px;
+    overflow: scroll;
+    height: 500px;
 }
 
 .Button {
