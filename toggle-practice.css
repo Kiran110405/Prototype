@@ -16,7 +16,7 @@ label {
     display: block;
     background-color: aliceblue;
     border-radius: 200px;
-    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 2.4), inset 0px -5px 15px rgb(255, 255, 255, 0.4);
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgb(255, 255, 255, 0.4);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -48,4 +48,21 @@ input:checked+label:after {
     left: 490px;
     transform: translateX(-100%);
     background: linear-gradient(180deg, #777, #3a3a3a)
+}
+
+label:active:after {
+    width: 260px;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: lightblue;
+    z-index: -1;
+    position: absolute;
+    transition: 0.3s;
+}
+
+input:checked + label + .background {
+    background: darkblue;
 }
