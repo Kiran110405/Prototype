@@ -66,3 +66,7 @@ label:active:after {
 input:checked + label + .background {
     background: darkblue;
 }
+
+.home-button {
+    padding: 20px;
+}
