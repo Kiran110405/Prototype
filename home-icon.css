@@ -2,7 +2,12 @@ body {
     margin: 0%;
 }
 
-.burger-menu {
+h2 {
+    text-align: center;
+    font-size: 200%;
+}
+
+.reload-icon {
     justify-content: center;
     margin: auto;
     display: flex;
@@ -23,10 +28,5 @@ p {
 }
 
 .button-set-one {
-    padding: 100px;
-}
-
-h2 {
-    text-align: center;
-    font-size: 200%;
+    padding: 20px;
 }
