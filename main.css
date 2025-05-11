@@ -43,7 +43,7 @@ body {
     background-color: rgba(240, 127, 231, 0.615)
 }
 
-.literacy-button {
+.definitions-button {
     padding: 30px;
     width: 250px;
     font-size: 150%;
@@ -51,7 +51,7 @@ body {
     background-color: rgba(240, 127, 231, 0.615)
 }
 
-.Practice-button {
+.practice-button {
     padding: 30px;
     width: 250px;
     font-size: 150%;
