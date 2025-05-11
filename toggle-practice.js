@@ -1,4 +1,7 @@
-const button = document.querySelector("button");
+const background = document.querySelector(".background");
+
+const button = document.getElementById("darkmode-toggle");
 button.addEventListener("click", () => {
-  button.style.backgroundColor = "green";
+  background.style.backgroundColor = "green";
 });
+
