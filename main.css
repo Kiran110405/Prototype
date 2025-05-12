@@ -5,7 +5,7 @@ body {
 .game {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: -45px; /*pushes the game button upwards*/ 
 }
 
 .game-button {
@@ -16,26 +16,35 @@ body {
 }
 
 
+.text {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
 
 .options-container {
    
-    margin:50px auto;
-    
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:70px;
+    padding-bottom:20px;
     display: flex;
     flex-direction: column;
     gap:10px;
-    align-items: center;
+    justify-content:center;
+    align-items: center; /*controls the inside elements*/
     background-color: lightblue;
     border-radius: 15px;
-    width: 600px;
-    height: 700px;
+
    
     
 }
 
-.interactions-button {
-    padding: 30px;
-    width: 375px;
+.pink-buttons {
+    padding: 12px;
+    width: 255px;
     font-size: 150%;
     background-color: #e8759c;
     border-radius: 20px;
@@ -43,37 +52,9 @@ body {
 
 }
 
-
-.basics-button {
-    padding: 30px;
-    width: 375px;
-    font-size: 150%;
-   background-color: #e8759c;
-    
-}
-
-.definitions-button {
-    padding: 30px;
-    width: 375px;
-    font-size: 150%;
-    border-radius: 20px;
-    background-color: #e8759c;
-  
-    
-
-
-
-}
-
-.practice-button {
-    padding: 30px;
-    width: 375px;
-    font-size: 150%;
-    border-radius: 20px;
-    background-color: #e8759c;
-}
 .age-logo{
-    margin:auto;
+    margin-left: 120px;
+    margin-top: 20px;
     justify-content: center;
     display: flex;
     
