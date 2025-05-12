@@ -1,3 +1,4 @@
 {
-    "css.lint.duplicateProperties": "warning"
+    "css.lint.duplicateProperties": "warning",
+    "liveServer.settings.port": 5501
 }
