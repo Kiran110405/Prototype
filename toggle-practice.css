@@ -57,14 +57,14 @@ label:active:after {
 .background {
     width: 100vw;
     height: 200vh;
-    background: lightblue;
+    background: rgb(167, 216, 248);
     z-index: -1;
     position: absolute;
     transition: 0.3s;
 }
 
 input:checked + label + .background {
-    background: darkblue;
+    background: rgb(15, 0, 99);
 }
 
 .home-button {
