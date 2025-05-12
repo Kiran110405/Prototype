@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Game Page</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 80px;
+        }
+
+        h2 {
+            position: absolute;
+            font-size: 50px;
+            left: 60%;
+            top: 300px;
+        }
+
+        h3 {
+            position: absolute;
+            font-size: 50px;
+            left: 60%;
+            top: 700px;
+        }
+
+        .level {
+            height: 145px;
+            width: 145px;
+            background-color: rgba(240, 127, 231, 1);
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 43%;
+            top: 300px;
+        }
+
+        .level-2 {
+            height: 145px;
+            width: 145px;
+            background-color: rgba(240, 127, 231, 1);
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 43%;
+            top: 700px;
+        }
+
+        .leveline {
+            border-left: 6px solid black;
+            height: 1600px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: "10%";
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            /* I think flexbox is the right use */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .game-part {
+            width: 1000px;
+            height: 1700px;
+            background-color: white;
+            border: 15px solid #ccc;
+            border-radius: 20px;
+            border-color: rgba(0, 157, 255, 0.615);
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="game-part">
+        <!-- Now there is where im actually gonna put the game content stuff -->
+        <h1>Games</h1>
+        <hr width="100%;" color=(0, 157, 255, 0.615) size="5"> <!-- Place game title thing above this -->
+        <h2>LEVEL 1</h2>
+        <div class="leveline"></div>
+        <button class="level" onclick="window.location.href='level-one.html'"></button>
+        <button class="level-2" onclick="window.location.href='level-two-match.html'"></button>
+        <h3>LEVEL 2</h3>
+
+
+    </div>
+
+</body>
+
+</html>
