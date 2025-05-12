@@ -26,36 +26,29 @@ body {
 
 .interactions-button {
     padding: 30px;
-    width: 250px;
-    font-size: 150%;
     width: 375px;
+    font-size: 150%;
     background-color: rgba(0, 157, 255, 0.615);
 }
 
 
 .basics-button {
     padding: 30px;
-    width: 250px;
-    font-size: 150%;
     width: 375px;
-
-
+    font-size: 150%;
     background-color: rgba(240, 127, 231, 0.615)
 }
 
 .definitions-button {
     padding: 30px;
-    width: 250px;
-    font-size: 150%;
     width: 375px;
+    font-size: 150%;
     background-color: rgba(240, 127, 231, 0.615)
 }
 
 .practice-button {
     padding: 30px;
-    width: 250px;
-    font-size: 150%;
     width: 375px;
-
+    font-size: 150%;
     background-color: rgba(0, 157, 255, 0.615);
 }

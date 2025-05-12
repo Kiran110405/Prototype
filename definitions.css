@@ -29,11 +29,10 @@ h2 {
 }
 
 .Button {
-    margin: 10px;
+    margin: 20px;
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin: 20px;
 }
 
 .home-button {
