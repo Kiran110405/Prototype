@@ -2,6 +2,20 @@ body {
     margin: 0px;
 }
 
+body::before {
+    content: ""; /* Necessary property for pseudo-element such as before or after */
+    position: fixed; /* ensures the border is anchored to the edges and will not be in a flow at some other point*/
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* this ensures our toggle element still works as it prevents this element from having any events related
+    to the mouse */
+    border: 15px solid #007BFF; /* adjust thickness and color */
+    box-sizing: border-box;
+    z-index: 9999; /* ensures this border is on top of everything else, as z controls how much 'out' of the screen it*/
+  }
+
 .page-title {
     background-color: rgba(0, 157, 255, 0.615);
     margin-top: 0px;
