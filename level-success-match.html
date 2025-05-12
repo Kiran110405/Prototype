@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Match Success</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 100px;
+        }
+
+        h2 {
+            position: absolute;
+            left: 52%;
+            top: 238px;
+
+        }
+
+        .question-box {
+            width: 600px;
+            height: 200px;
+            background-color: rgba(0, 157, 255, 0.615);
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 50px;
+        }
+
+
+        .level {
+            height: 45px;
+            width: 45px;
+            background-color: rgba(240, 127, 231, 1);
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 48.8%;
+            top: 250px;
+
+        }
+
+        .leveline {
+            border-left: 6px solid black;
+            height: 641px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: 200px;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .game-part {
+            width: 1000px;
+            height: 1700px;
+            background-color: white;
+            border: 15px solid #ccc;
+            border-radius: 20px;
+            border-color: rgba(0, 157, 255, 0.615);
+            overflow: hidden;
+        }
+
+        .button-row {
+            position: absolute;
+            top: calc(20% + 200px + 20px);
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .answer-box {
+            background-color: rgba(240, 127, 231, 0.615);
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 50px;
+        }
+
+        .to-level-select {
+            position: fixed;
+            bottom: 80px;
+            left: 77px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 40px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="game-part">
+        <h1>Level Two: Success</h1>
+        <hr width="100%;" color=(0, 157, 255, 0.615) size="5">
+        <div class="question-box">
+            Congratulations! you have completed this level! You can now make your way back to the level selection
+        </div>
+
+        <button class="to-level-select" onclick="window.location.href='game-page.html'">To Level Select</button>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
