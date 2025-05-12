@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Match Game</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 100px;
+        }
+
+        h2 {
+            position: absolute;
+            left: 52%;
+            top: 238px;
+        }
+
+        .level {
+            height: 45px;
+            width: 45px;
+            background-color: rgba(240, 127, 231, 1);
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 48.8%;
+            top: 250px;
+
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .game-part {
+            width: 1000px;
+            height: 1700px;
+            background-color: white;
+            border: 15px solid #ccc;
+            border-radius: 20px;
+            border-color: rgba(0, 157, 255, 0.615);
+            overflow: hidden;
+        }
+
+        .button-row {
+            position: absolute;
+            top: calc(20% + 200px + 20px);
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .to-level-select {
+            position: fixed;
+            bottom: 80px;
+            left: 77px;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 40px;
+
+        }
+
+        .match-game {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .drop-zone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .label {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        .slot {
+            width: 200px;
+            height: 200px;
+            border: 2px dashed gray;
+            margin-bottom: 20px;
+        }
+
+        .draggables {
+            display: flex;
+            gap: 20px;
+        }
+
+        .draggable {
+            width: 200px;
+            height: 200px;
+            cursor: grab;
+        }
+
+        .submit-button {
+            padding: 40px 60px;
+            background-color: green;
+            color: white;
+            font-size: 40px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="game-part">
+        <!-- Game content below! -->
+        <h1>Level Two: Match</h1>
+        <hr width="100%;" color=(0, 157, 255, 0.615) size="5">
+        <button class="to-level-select" onclick="window.location.href='game-page.html'">To Level Select</button>
+        <div class="match-game">
+
+
+            <div class="drop-zone" data-match="home"> <!-- The specific drop zone parts -->
+                <div class="label">Home</div>
+                <div class="slot"></div>
+            </div>
+
+            <div class="drop-zone" data-match="camera">
+                <div class="label">Camera</div>
+                <div class="slot"></div>
+            </div>
+
+
+            <div class="draggables"> <!-- The images that are used -->
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F568%2F450%2Foriginal%2Fhome-icon-vector.jpg&f=1&nofb=1&ipt=807b142eecddc9a1c4184a8c3dc58ea38fdbd8a4cf9201e28984d32779b21f64"
+                    draggable="true" class="draggable" data-name="home">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.RSmYw6i7VzbbNUGrVS71nAHaHa%3Fcb%3Diwp2%26pid%3DApi&f=1&ipt=f13a8142e8cd1cb08b88843b294d253298b5f5725a1ba34d40e05549967fbc67"
+                    draggable="true" class="draggable" data-name="camera">
+            </div>
+            <button class="submit-button">Submit</button>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        const draggables = document.querySelectorAll('.draggable');
+        const slots = document.querySelectorAll('.slot');
+
+        draggables.forEach(item => {
+            item.addEventListener('dragstart', (e) => {
+                e.dataTransfer.setData('text/plain', item.dataset.name);
+            });
+        });
+
+        slots.forEach(slot => {
+            slot.addEventListener('dragover', (e) => {
+                e.preventDefault();
+            });
+
+            slot.addEventListener('drop', (e) => {
+                e.preventDefault();
+                const droppedName = e.dataTransfer.getData('text/plain');
+                const draggedItem = document.querySelector(`.draggable[data-name="${droppedName}"]`);
+
+                // Should get rid of unecessary stuff?
+                slot.innerHTML = '';
+                slot.appendChild(draggedItem);
+            });
+        });
+
+        document.querySelector('.submit-button').addEventListener('click', () => {
+            let allCorrect = true;
+
+            document.querySelectorAll('.drop-zone').forEach(zone => {
+                const expected = zone.dataset.match;
+                const dropped = zone.querySelector('.slot img');
+
+                if (!dropped || dropped.dataset.name !== expected) {
+                    allCorrect = false;
+                }
+            });
+
+            if (allCorrect) {
+                window.location.href = 'level-success-match.html'; // Goes to the level that is correct
+            } else {
+                window.location.href = 'level-fail-match.html'; // Goes to the failure level
+            }
+        });
+    </script>
+
+</body>
+
+</html>
