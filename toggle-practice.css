@@ -1,3 +1,18 @@
+#attributes-container {
+   
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:70px;
+    padding-bottom:20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content:center;
+    align-items: center; /*controls the inside elements*/
+    background-color: lightblue;
+    border-radius: 15px;    
+}
+
 body {
     margin: 0%;
 }
@@ -67,6 +82,6 @@ input:checked + label + .background {
     background: rgb(15, 0, 99);
 }
 
-.home-button {
+#home-button {
     padding: 20px;
 }
