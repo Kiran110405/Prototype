@@ -40,6 +40,7 @@ body {
     /*controls the inside elements*/
     background-color: rgba(0, 157, 255, 0.615);
     border-radius: 15px;
+    box-shadow: 5px 5px;
 
 
 
@@ -51,7 +52,6 @@ body {
     font-size: 150%;
     background-color: #e8759c;
     border-radius: 20px;
-    box-shadow: 5px 5px;
 
 
 }
