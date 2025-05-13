@@ -60,7 +60,7 @@ body::before {
     font-size: 200%;
     border-radius: 30px;
     box-shadow: 4px 4px 4px;
-    background-color: rgba(240, 127, 231, 0.615);
+    background-color: #e8759c;
 }
 
 footer {
