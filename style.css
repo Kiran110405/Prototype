@@ -19,7 +19,7 @@ body::before {
     pointer-events: none;
     /* this ensures our toggle element still works as it prevents this element from having any events related
     to the mouse */
-    border: 15px solid rgba(0, 157, 255, 0.615);
+    border: 15px solid rgba(0, 157, 255, 1);
     ;
     /* adjust thickness and color */
     box-sizing: border-box;
@@ -48,7 +48,9 @@ body::before {
     font-size: 50%;
 }
 
-
+#home-button {
+    padding: 20px;
+}
 
 .Age-UK-symbol {
     margin-left: 30px;

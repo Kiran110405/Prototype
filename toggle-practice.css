@@ -1,9 +1,9 @@
 #attributes-container {
-   
     margin-left:50px;
     margin-right:50px;
-    margin-bottom:70px;
+    margin-bottom:20px;
     padding-bottom:20px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     gap:10px;
@@ -13,6 +13,50 @@
     border-radius: 15px;    
 }
 
+#attributes-list {
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: flex-start; /* <-- THIS aligns list items to the left */
+    width: 100%; /* optional but helps ensure alignment consistency */
+    padding-left: 100px; /* optional: adds left spacing inside container */
+}
+
+#values-list {
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start; /* <-- THIS aligns list items to the left */
+    width: 100%; /* optional but helps ensure alignment consistency */
+    margin-left: 100px; /* optional: adds left spacing inside container */
+    margin-top: -170px;
+
+}
+
+#values-list li {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#mode-label {
+    padding-right: 128px; /* optional: adds left spacing inside container */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start; /* <-- THIS aligns list items to the left */
+    font-size: 20px;
+    color: #000;
+}
 body {
     margin: 0%;
 }
@@ -25,8 +69,11 @@ main {
 }
 
 label {
-    width: 200px;
-    height: 70px;
+    margin-bottom: 200px;
+    margin-top: -250px;
+    margin-left: 120px;
+    width: 110px;
+    height: 50px;
     position: relative;
     display: block;
     background-color: aliceblue;
@@ -38,8 +85,8 @@ label {
 
 label:after {
     content: "";
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -60,7 +107,7 @@ input:checked+label {
 }
 
 input:checked+label:after {
-    left: 190px;
+    left: 100px;
     transform: translateX(-100%);
     background: linear-gradient(180deg, #777, #3a3a3a)
 }
@@ -82,6 +129,3 @@ input:checked + label + .background {
     background: rgb(15, 0, 99);
 }
 
-#home-button {
-    padding: 20px;
-}

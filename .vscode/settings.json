@@ -2,6 +2,7 @@
     "css.lint.duplicateProperties": "warning",
     "liveServer.settings.port": 5501,
     "cSpell.words": [
+        "darkmode",
         "leveline"
     ]
 }
