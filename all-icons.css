@@ -4,7 +4,7 @@ body {
 
 p {
     text-align: center;
-    margin: 10px;
+    margin: 20px;
 }
 
 .button-menu {
@@ -26,8 +26,8 @@ p {
     display: flex;
     box-shadow: 4px 4px 4px 4px;
 }
+
 h2 {
     text-align: center;
     font-size: 200%;
 }
-
