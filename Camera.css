@@ -15,3 +15,8 @@ h1 {
     padding: 30px;
     border-radius: 20px;
 }
+
+.button {
+    display: flex;
+    justify-content: center;
+}
