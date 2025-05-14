@@ -48,7 +48,10 @@ body::before {
     font-size: 50%;
 }
 
-#home-button {
+.home-button {
+    font-size: 100%;
+    background-color: #e8759c;
+    border-radius: 20px;
     padding: 20px;
 }
 
