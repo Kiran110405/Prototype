@@ -173,7 +173,7 @@
                 const droppedName = e.dataTransfer.getData('text/plain');
                 const draggedItem = document.querySelector(`.draggable[data-name="${droppedName}"]`);
 
-                // Should get rid of unecessary stuff?
+                // Should get rid of unnecessary stuff?
                 slot.innerHTML = '';
                 slot.appendChild(draggedItem);
             });
