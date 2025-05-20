@@ -1,137 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Quiz Page One</title>
     <style>
-        h1 {
-            text-align: center;
-            font-size: 100px;
-        }
+      h1 {
+        text-align: center;
+        font-size: 100px;
+      }
 
-        h2 {
-            position: absolute;
-            left: 52%;
-            top: 238px;
+      h2 {
+        position: absolute;
+        left: 52%;
+        top: 238px;
+      }
 
-        }
+      .question-box {
+        background-color: rgba(0, 157, 255, 0.615);
+        margin: 20px;
+    
+        padding: 80px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 50px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 45px
+      }
 
-        .question-box {
-            width: 600px;
-            height: 200px;
-            background-color: rgba(0, 157, 255, 0.615);
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 10px;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-size: 50px;
-            border-radius: 20px;
-        }
+      .level {
+        height: 45px;
+        width: 45px;
+        background-color: rgba(240, 127, 231, 1);
+        border-radius: 50%;
 
+        display: inline-block;
+        position: absolute;
+        left: 48.8%;
+        top: 250px;
+      }
 
-        .level {
-            height: 45px;
-            width: 45px;
-            background-color: rgba(240, 127, 231, 1);
-            border-radius: 50%;
-            display: inline-block;
-            position: absolute;
-            left: 48.8%;
-            top: 250px;
+      .leveline {
+        border-left: 6px solid black;
+        height: 641px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: 100px;
+      }
 
-        }
+      body {
+        background-color: rgba(0, 157, 255, 0.615);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
 
-        .leveline {
-            border-left: 6px solid black;
-            height: 641px;
-            position: absolute;
-            left: 50%;
-            margin-left: -3px;
-            top: 100px;
-        }
+      .game-part {
+        width: 1000px;
+        height: 1700px;
+        background-color: white;
+        border: 15px solid #ccc;
+        border-radius: 20px;
+        border-color: rgba(0, 157, 255, 0.615);
+        overflow: hidden;
+      }
 
-        body {
-            background-color: rgba(0, 157, 255, 0.615);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+      .button-row {
+        position: absolute;
+        top: calc(20% + 200px + 20px);
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+      }
 
-        .game-part {
-            width: 1000px;
-            height: 1700px;
-            background-color: white;
-            border: 15px solid #ccc;
-            border-radius: 20px;
-            border-color: rgba(0, 157, 255, 0.615);
-            overflow: hidden;
-        }
+      .Question {
+        font-size: 150%;
+      }
 
-        .button-row {
-            position: absolute;
-            top: calc(20% + 200px + 20px);
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-        }
+      .answer-box {
+        background-color: #e8759c;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 80px;
+        height: auto;
+      }
 
-        .answer-box {
-            background-color: #e8759c;
-            color: black;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 50px;
-            height: auto;
-        }
-
-        .to-level-select {
-            position: fixed;
-            bottom: 80px;
-            left: 77px;
-            background-color:rgba(0, 157, 255, 0.615);
-            color: black;
-            border: none;
-            padding: 12px 18px;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 40px;
-            
-            
-
-        }
+      .to-level-select {
+        position: fixed;
+        bottom: 80px;
+        left: 77px;
+        background-color: rgba(0, 157, 255, 0.615);
+        color: black;
+        border: none;
+        padding: 12px 18px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 40px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="game-part">
-        <!-- Now there is where im actually gonna put the game content stuff -->
-        <h1>Level One: Quiz</h1>
-        <div class="question-box">
-            What is the app you use to take photos?
-        </div>
-        <div class="button-row">
-            <button class="answer-box" onclick="window.location.href='level-two.html'">Camera</button>
-            <button class="answer-box" onclick="window.location.href='level-fail.html'">Gallery</button>
-            <button class="answer-box" onclick="window.location.href='level-fail.html'">Contacts</button>
-        </div>
-        <button class="to-level-select" onclick="window.location.href='game-page.html'"> Click to Select Level</button>
+      <!-- Now there is where im actually gonna put the game content stuff -->
+      <h1>Level One: Quiz</h1>
+      <div class="question-box">
+        <p class="Question">What is the app you use to take photos?</p>
 
-
-
-
+          <button
+            class="answer-box"
+            onclick="window.location.href='level-two.html'"
+          >
+            Camera
+          </button>
+          <button
+            class="answer-box"
+            onclick="window.location.href='level-fail.html'"
+          >
+            Gallery
+          </button>
+          <button
+            class="answer-box"
+            onclick="window.location.href='level-fail.html'"
+          >
+            Contacts
+          </button>
+    
+      </div>
+      <button
+        class="to-level-select"
+        onclick="window.location.href='game-page.html'"
+      >
+        Click to Select Level
+      </button>
     </div>
-
-</body>
-
+  </body>
 </html>
