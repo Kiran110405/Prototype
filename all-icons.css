@@ -4,18 +4,30 @@ body {
 
 p {
     text-align: center;
-    margin: 10px;
+    margin: 20px;
+    background-color: rgba(0, 157, 255, 0.615);
+    border-radius: 20px;
+    padding: 15px;
 }
 
 .button-menu {
-    margin: 20px;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 }
 
-.button-set-one {
+.button-set-pink {
+    font-size: 100%;
+    background-color: #e8759c;
+    border-radius: 20px;
     padding: 20px;
+}
+
+.button-set-blue {
+    font-size: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(0, 157, 255, 0.615);
 }
 
 .symbol-icon {
@@ -26,8 +38,8 @@ p {
     display: flex;
     box-shadow: 4px 4px 4px 4px;
 }
+
 h2 {
     text-align: center;
     font-size: 200%;
 }
-

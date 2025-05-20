@@ -5,7 +5,8 @@ body {
 .game {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: -45px;
+    /*pushes the game button upwards*/
 }
 
 .game-button {
@@ -13,70 +14,54 @@ body {
     width: 250px;
     font-size: 150%;
     border-radius: 30px;
+    box-shadow: 2px 2px;
 }
 
+
+.text {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
 
 
 .options-container {
-   
-    margin:50px auto;
-    
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
+    justify-content: center;
     align-items: center;
-    background-color: lightblue;
+    /*controls the inside elements*/
+    background-color: rgba(0, 157, 255, 0.615);
     border-radius: 15px;
-    width: 600px;
-    height: 700px;
-   
-    
+    box-shadow: 5px 5px;
+
+
+
 }
 
-.interactions-button {
-    padding: 30px;
-    width: 375px;
+.pink-buttons {
+    padding: 12px;
+    width: 255px;
     font-size: 150%;
     background-color: #e8759c;
     border-radius: 20px;
-    
-
-}
-
-
-.basics-button {
-    padding: 30px;
-    width: 375px;
-    font-size: 150%;
-   background-color: #e8759c;
-    
-}
-
-.definitions-button {
-    padding: 30px;
-    width: 375px;
-    font-size: 150%;
-    border-radius: 20px;
-    background-color: #e8759c;
-  
-    
-
 
 
 }
 
-.practice-button {
-    padding: 30px;
-    width: 375px;
-    font-size: 150%;
-    border-radius: 20px;
-    background-color: #e8759c;
-}
-.age-logo{
-    margin:auto;
+.age-logo {
+    margin-left: 120px;
+    margin-top: 20px;
     justify-content: center;
     display: flex;
-    
-    
+
+
 
 }

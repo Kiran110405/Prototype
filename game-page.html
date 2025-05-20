@@ -3,6 +3,7 @@
 
 <head>
     <title>Game Page</title>
+    <link rel="stylesheet" href="style.css" />
     <style>
         h1 {
             text-align: center;
@@ -26,7 +27,7 @@
         .level {
             height: 145px;
             width: 145px;
-            background-color: rgba(240, 127, 231, 1);
+            background-color: #e8759c;
             border-radius: 50%;
             display: inline-block;
             position: absolute;
@@ -37,7 +38,7 @@
         .level-2 {
             height: 145px;
             width: 145px;
-            background-color: rgba(240, 127, 231, 1);
+            background-color: #e8759c;
             border-radius: 50%;
             display: inline-block;
             position: absolute;
@@ -55,34 +56,37 @@
         }
 
         body {
-            background-color: rgba(0, 157, 255, 0.615);
+           
+            
             display: flex;
             /* I think flexbox is the right use */
             justify-content: center;
             align-items: center;
             height: 100vh;
+
+            
         }
 
         .game-part {
             width: 1000px;
             height: 1700px;
             background-color: white;
-            border: 15px solid #ccc;
+            
             border-radius: 20px;
-            border-color: rgba(0, 157, 255, 0.615);
+          
             overflow: hidden;
         }
 
 
-        .to-level-select {
+        .to-level-select { /*The Go back section*/
             position: fixed;
             bottom: 80px;
             left: 777px;
-            background-color: red;
-            color: white;
+            background-color:rgba(0, 157, 255, 0.615) ;
+            color: black;
             border: none;
             padding: 100px 50px;
-            border-radius: 6px;
+            border-radius: 15px;
             cursor: pointer;
             font-size: 250%;
 

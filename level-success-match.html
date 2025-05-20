@@ -3,6 +3,7 @@
 
 <head>
     <title>Match Success</title>
+    <link rel="stylesheet" href="style.css" />
     <style>
         h1 {
             text-align: center;
@@ -31,13 +32,14 @@
             align-items: center;
             text-align: center;
             font-size: 50px;
+            border-radius: 20px;
         }
 
 
         .level {
             height: 45px;
             width: 45px;
-            background-color: rgba(240, 127, 231, 1);
+            background-color:  #e8759c;
             border-radius: 50%;
             display: inline-block;
             position: absolute;
@@ -83,7 +85,7 @@
         }
 
         .answer-box {
-            background-color: rgba(240, 127, 231, 0.615);
+            background-color:  #e8759c;
             color: black;
             border: none;
             padding: 10px 20px;
@@ -112,12 +114,11 @@
 
     <div class="game-part">
         <h1>Level Two: Success</h1>
-        <hr width="100%;" color=(0, 157, 255, 0.615) size="5">
         <div class="question-box">
             Congratulations! you have completed this level! You can now make your way back to the level selection
         </div>
 
-        <button class="to-level-select" onclick="window.location.href='game-page.html'">To Level Select</button>
+        <button class="to-level-select" onclick="window.location.href='game-page.html'">Click to Select Level</button>
 
 
 
