@@ -16,26 +16,26 @@
             top: 238px;
 
         }
+
         * {
-    font-family: sans-serif;
-}
+            font-family: sans-serif;
+        }
 
         .question-box {
-            width: 600px;
-            height: 200px;
-            background-color:   rgba(0, 157, 255, 0.615);
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 10px;
+            background-color: rgba(0, 157, 255, 0.615);
+            margin: 20px;
+
+            padding: 80px;
             box-sizing: border-box;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            font-size: 40px;
+            font-size: 50px;
             border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 45px
         }
 
 
@@ -88,26 +88,31 @@
         }
 
         .answer-box {
-            background-color:  #e8759c;
+            background-color: #e8759c;
             color: black;
             border: none;
             padding: 10px 20px;
             border-radius: 20px;
             cursor: pointer;
-            font-size: 50px;
+            font-size: 150%;
         }
 
         .to-level-select {
-           position: fixed;
+            position: fixed;
             bottom: 80px;
             left: 77px;
-            background-color:rgba(0, 157, 255, 0.615);
+            background-color: rgba(0, 157, 255, 0.615);
             color: black;
             border: none;
             padding: 12px 18px;
             border-radius: 30px;
             cursor: pointer;
             font-size: 40px;
+        }
+
+        .Questions {
+            font-size: 150%;
+
         }
     </style>
 </head>
@@ -118,12 +123,13 @@
 
         <h1>Level One: Quiz</h1>
         <div class="question-box">
-            Next Question: Who should you give your passwords to in case you forget?
-        </div>
-        <div class="button-row">
+            <p class="Questions">Next Question: Who should you give your passwords to in case you forget?</p>
+
+
             <button class="answer-box" onclick="window.location.href='level-fail.html'">Strangers</button>
             <button class="answer-box" onclick="window.location.href='level-three.html'">Trusted Family</button>
             <button class="answer-box" onclick="window.location.href='level-fail.html'">The Bank</button>
+
         </div>
 
         <button class="to-level-select" onclick="window.location.href='game-page.html'"> Click to Select Level</button>
