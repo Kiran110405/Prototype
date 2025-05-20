@@ -16,6 +16,15 @@
             top: 238px;
         }
 
+        * {
+            font-family: sans-serif;
+        }
+
+        .heading-div {
+            background-color: rgba(0, 157, 255, 0.615);
+            padding: 10px;
+        }
+
         .level {
             height: 45px;
             width: 45px;
@@ -59,15 +68,15 @@
             position: fixed;
             bottom: 80px;
             left: 77px;
-            background-color:rgba(0, 157, 255, 0.615) ;
+            background-color: rgba(0, 157, 255, 0.615);
             color: black;
             border: none;
             padding: 12px 18px;
             border-radius: 30px;
             cursor: pointer;
             font-size: 40px;
-            
-            
+
+
         }
 
         .match-game {
@@ -110,7 +119,7 @@
 
         .submit-button {
             padding: 40px 60px;
-            background-color:#e8759c;
+            background-color: #e8759c;
             color: black;
             font-size: 40px;
             border: none;
@@ -124,7 +133,9 @@
 
     <div class="game-part">
         <!-- Game content below! -->
-        <h1>Level Two: Match</h1>
+        <div class="heading-div">
+            <h1>Match The Icons!</h1>
+        </div>
         <hr width="100%;" color=(0, 157, 255, 0.615) size="5">
         <button class="to-level-select" onclick="window.location.href='game-page.html'">Click To Select Level</button>
         <div class="match-game">

@@ -10,6 +10,11 @@
             font-size: 80px;
         }
 
+        .heading-div {
+            background-color: rgba(0, 157, 255, 0.615);
+            padding: 10px;
+        }
+
         h2 {
             position: absolute;
             font-size: 50px;
@@ -56,33 +61,33 @@
         }
 
         body {
-           
-            
+
+
             display: flex;
-            /* I think flexbox is the right use */
             justify-content: center;
             align-items: center;
             height: 100vh;
 
-            
+
         }
 
         .game-part {
             width: 1000px;
             height: 1700px;
             background-color: white;
-            
+
             border-radius: 20px;
-          
+
             overflow: hidden;
         }
 
 
-        .to-level-select { /*The Go back section*/
+        .to-level-select {
+            /*The Go back section*/
             position: fixed;
             bottom: 80px;
             left: 777px;
-            background-color:rgba(0, 157, 255, 0.615) ;
+            background-color: rgba(0, 157, 255, 0.615);
             color: black;
             border: none;
             padding: 100px 50px;
@@ -97,9 +102,10 @@
 <body>
 
     <div class="game-part">
-        <!-- Now there is where im actually gonna put the game content stuff -->
-        <h1>Games</h1>
-        <hr width="100%;" color=(0, 157, 255, 0.615) size="5"> <!-- Place game title thing above this -->
+        <div class="heading-div">
+            <h1>Games</h1>
+        </div>
+
         <h2>LEVEL 1</h2>
         <div class="leveline"></div>
         <button class="level" onclick="window.location.href='level-one.html'"></button>

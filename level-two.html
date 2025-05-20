@@ -21,13 +21,16 @@
             font-family: sans-serif;
         }
 
+        .heading-div {
+            background-color: rgba(0, 157, 255, 0.615);
+            padding: 10px;
+        }
+
         .question-box {
             background-color: rgba(0, 157, 255, 0.615);
-            margin: 20px;
-
-            padding: 80px;
+            margin: 40px;
+            padding: 60px;
             box-sizing: border-box;
-            display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -99,7 +102,7 @@
 
         .to-level-select {
             position: fixed;
-            bottom: 80px;
+            bottom: 40px;
             left: 77px;
             background-color: rgba(0, 157, 255, 0.615);
             color: black;
@@ -120,11 +123,11 @@
 <body>
 
     <div class="game-part">
-
-        <h1>Level One: Quiz</h1>
+        <div class="heading-div">
+            <h1>Quiz: Question 2</h1>
+        </div>
         <div class="question-box">
-            <p class="Questions">Next Question: Who should you give your passwords to in case you forget?</p>
-
+            <p class="Questions">Who should you give your passwords to in case you forget?</p>
 
             <button class="answer-box" onclick="window.location.href='level-fail.html'">Strangers</button>
             <button class="answer-box" onclick="window.location.href='level-three.html'">Trusted Family</button>
@@ -132,7 +135,7 @@
 
         </div>
 
-        <button class="to-level-select" onclick="window.location.href='game-page.html'"> Click to Select Level</button>
+        <button class="to-level-select" onclick="window.location.href='game-page.html'"> Click To Select Level</button>
 
 
     </div>

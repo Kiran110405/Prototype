@@ -3,6 +3,7 @@
 
 <head>
     <title>Quiz Page Three</title>
+    <link rel="stylesheet" href="style.css" />
     <style>
         h1 {
             text-align: center;
@@ -11,6 +12,11 @@
 
         * {
             font-family: sans-serif;
+        }
+
+        .heading-div {
+            background-color: rgba(0, 157, 255, 0.615);
+            padding: 10px;
         }
 
         h2 {
@@ -22,11 +28,9 @@
 
         .question-box {
             background-color: rgba(0, 157, 255, 0.615);
-            margin: 20px;
-
-            padding: 80px;
+            margin: 40px;
+            padding: 60px;
             box-sizing: border-box;
-            display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -102,7 +106,7 @@
 
         .to-level-select {
             position: fixed;
-            bottom: 80px;
+            bottom: 40px;
             left: 77px;
             background-color: rgba(0, 157, 255, 0.615);
             color: black;
@@ -118,14 +122,16 @@
 <body>
 
     <div class="game-part">
-        <h1>Level One: Quiz</h1>
+        <div class="heading-div">
+            <h1>Quiz: Question 3</h1>
+        </div>
         <div class="question-box">
-            <p class="Questions">Last Question: What symbol is the square with an overhanging triangle on top of it
-                called?</p>
+            <p class="Questions">"Which is the icon that usually takes you back to the main screen or starting page?
+                Typically in the shape of a house?"</p>
 
             <button class="answer-box" onclick="window.location.href='level-fail.html'">Building</button>
             <button class="answer-box" onclick="window.location.href='level-success.html'">Home</button>
-            <button class="answer-box" onclick="window.location.href='level-fail.html'">Pointy</button>
+            <button class="answer-box" onclick="window.location.href='level-fail.html'">Return</button>
 
         </div>
         <button class="to-level-select" onclick="window.location.href='game-page.html'">Click To Select Level</button>

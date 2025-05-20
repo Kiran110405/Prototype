@@ -10,6 +10,15 @@
             font-size: 100px;
         }
 
+        * {
+            font-family: sans-serif;
+        }
+
+        .heading-div {
+            background-color: rgba(0, 157, 255, 0.615);
+            padding: 10px;
+        }
+
         h2 {
             position: absolute;
             left: 52%;
@@ -18,11 +27,11 @@
         }
 
         .question-box {
-            width: 600px;
-            height: 400px;
+            width: 700px;
+            height: 500px;
             background-color: rgba(0, 157, 255, 0.615);
             position: absolute;
-            top: 20%;
+            top: 30%;
             left: 50%;
             transform: translateX(-50%);
             padding: 10px;
@@ -31,7 +40,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            font-size: 50px;
+            font-size: 65px;
             border-radius: 20px;
         }
 
@@ -96,7 +105,7 @@
 
         .to-level-select {
             position: fixed;
-            bottom: 80px;
+            bottom: 40px;
             left: 77px;
             background-color: green;
             color: white;
@@ -113,8 +122,9 @@
 <body>
 
     <div class="game-part">
-
-        <h1>Level One: Quiz</h1>
+        <div class="heading-div">
+            <h1>Quiz Completed!</h1>
+        </div>
         <div class="question-box">
             Congratulations! you have completed the quiz! you may now progress onto Level 2
         </div>
